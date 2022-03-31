@@ -1,0 +1,49 @@
+body {
+    background: #2ebf91;
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+    background: linear-gradient(to right,  #2ebf91, #8360c3);
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.shakeMe {
+    size: 100%;
+    border-radius: 50%;
+    width: 30em;
+    height: 15em;
+    position: relative;
+    animation: shake .8s ease-in;
+    animation-duration: 1s;
+}
+
+#content {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 100;
+    font-family: system-ui;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate(.8em);
+    }
+    10%,
+    30%,
+    50% {
+        transform: translate( -.2em);
+    }
+    70%,
+    100% {
+        transform: translate(0);
+    }
+}
